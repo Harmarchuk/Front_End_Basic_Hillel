@@ -1,13 +1,31 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
 }
 
-.container {
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+h1 {
+  color: #7289da;
+}
+
+#title3 {
+  color: #ff4d00;
+}
+
+.default-text.custom {
+  color: #001eff;
+}
+
+.list {
+  color: #bd00ff;
+}
+
+ol li + li {
+  color: #1ca3ec;
+}
+
+br ~ P {
+  color: #1db954;
+}
+
+a[target] {
+  color: #ffa700;
 }
