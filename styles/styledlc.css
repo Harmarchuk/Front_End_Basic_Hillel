@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Pacifico", cursive;
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #303030;
+  font-weight: 700;
+}
+
+.card {
+  width: 268px;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 0 30px rgba(50, 50, 100, 0.25);
+}
+
+.card-img {
+  width: 268px;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.7;
+}
+
+div > h2 {
+  color: #303030;
+}
+
+.card-sub {
+  color: #909090;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  text-align: right;
+}
