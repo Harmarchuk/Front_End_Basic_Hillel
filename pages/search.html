@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Пошук</title>
+	<link rel="stylesheet" href="../fonts/font.css">
+	<link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<nav>
+			<a href="../index.html">Реєстрація</a>
+			<a href="../pages/authorization.html">Авторизація </a>
+			<a href="../pages/search.html">Пошук</a>
+		</nav>
+	</header>
+	<main>
+		<div class="search-page">
+			<h1>Пошук</h1>
+			<hr>
+			<form name="form1page" action="https://fom.in.ua/echo" method="post">
+				<p>
+					<label>
+						<span>Тип кузова:</span>
+						<select class="select-css" name="car body">
+							<option value="none" disabled selected>Оберіть тип кузова</option>
+							<option value="Седан">Седан</option>
+							<option value="Універсал">Універсал</option>
+							<option value="Хетчбек">Хетчбек</option>
+							<option value="Ліфтбек">Ліфтбек</option>
+							<option value="Лімузин">Лімузин</option>
+							<option value="Позашляховик">Позашляховик</option>
+							<option value="Кросовер">Кросовер</option>
+							<option value="Купе">Купе</option>
+							<option value="Кабріолет">Кабріолет</option>
+							<option value="Родстер">Родстер</option>
+							<option value="Пікап">Пікап</option>
+							<option value="Фургон">Фургон</option>
+							<option value="Мінівен">Мінівен</option>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Марка авто:</span>
+						<select class="select-css" name="car model">
+							<option value="none" disabled selected>Оберіть марку</option>
+							<option value="SEAT">SEAT</option>
+							<option value="Alfa Romeo">Alfa Romeo</option>
+							<option value="Fiat">Fiat</option>
+							<option value="Audi">Audi</option>
+							<option value="BMW">BMW</option>
+							<option value="Opel">Opel</option>
+							<option value="Porsche">Porsche</option>
+							<option value="Volkswagen">Volkswagen</option>
+							<option value="Hyundai">Hyundai</option>
+							<option value="Kia">Kia</option>
+							<option value="Chevrolet">Chevrolet</option>
+							<option value="Ford">Ford</option>
+							<option value="Jeep">Jeep</option>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Країна виробник:</span>
+						<select class="select-css" name="producing country">
+							<option value="none" disabled selected>Оберіть країну</option>
+							<option value="Італія">Італія</option>
+							<option value="Німеччина">Німеччина</option>
+							<option value="Південна Корея">Південна Корея</option>
+							<option value="США">США</option>
+							<option value="Іспанія">Іспанія</option>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Ціна авто:</span>
+						<input type="number" name="price per" placeholder="Ціна від" class="bs">
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="number" name="price up to" placeholder="Ціна до" class="bs">
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Рік випуску авто:</span>
+						<input type="number" name="year of issue from" placeholder="Рік від" class="bs">
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="number" name="year of issue to" placeholder="Рік до" class="bs">
+					</label>
+				</p>
+				<p><b>Стан авто:</b></p>
+				<div class="radio-line">
+					<input type="radio" name="not painted" id="Choice1">
+					<label for="Choice1">Не фарбована</label>
+
+					<input type="radio" name="painted" id="Choice2">
+					<label for="Choice2">Фарбована</label>
+
+					<input type="radio" name="accident" id="Choice3">
+					<label for="Choice3">Бита</label>
+
+					<input type="radio" name="no accident" id="Choice4">
+					<label for="Choice4">Не бита</label>
+
+					<input type="radio" name="euro" id="Choice5">
+					<label for="Choice5">Євробляха</label>
+
+					<input type="radio" name="customs cleared" id="Choice6">
+					<label for="Choice6">Розмитнена</label>
+				</div>
+
+				<p><b>Тип палива:</b></p>
+				<div class="radio-line">
+					<input type="radio" name="fuel" id="fuel1">
+					<label for="fuel1">Бензин</label>
+
+					<input type="radio" name="fuel" id="fuel2">
+					<label for="fuel2">Газ</label>
+
+					<input type="radio" name="fuel" id="fuel3">
+					<label for="fuel3">Дизель</label>
+
+					<input type="radio" name="fuel" id="fuel4">
+					<label for="fuel4">Електро</label>
+
+					<input type="radio" name="fuel" id="fuel5">
+					<label for="fuel5">Дрова</label>
+				</div>
+
+				<p><b>Тип коробки передач:</b></p>
+				<div class="radio-line">
+					<input type="radio" name="box" id="box1">
+					<label for="box1">Механіка</label>
+
+					<input type="radio" name="box" id="box2">
+					<label for="fuel2">Автомат</label>
+				</div>
+				<p></p>
+				<label>
+					<span>Виберіть колір</span>
+					<input type="color" name="color">
+				</label>
+
+				<p><b>Комфорт:</b></p>
+				<div class="radio-line">
+					<input type="radio" name="hatch" id="Choice11">
+					<label for="Choice1">Люк</label>
+
+					<input type="radio" name="leather salon" id="Choice22">
+					<label for="Choice22">Шкіряний салон</label>
+
+					<input type="radio" name="stereo system" id="Choice33">
+					<label for="Choice33">Стерео система</label>
+
+					<input type="radio" name="climate control" id="Choice44">
+					<label for="Choice44">Клімат контроль</label>
+
+					<input type="radio" name="park" id="Choice55">
+					<label for="Choice55">Парктронік</label>
+
+					<input type="radio" name="cruise control" id="Choice66">
+					<label for="Choice66">Круіз контроль</label>
+				</div>
+				<p>
+					<label>
+						<button type="submit">Підтвердити</button>
+					</label>
+				</p>
+			</form>
+		</div>
+	</main>
+	<footer class="footer">
+		&#9888;Під час повітряної тривоги - пройдіть до укриття &#9888;
+	</footer>
+</body>
+
+</html>
