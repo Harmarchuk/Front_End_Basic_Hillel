@@ -1,26 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-}
-
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #303030;
+  color: #090088;
 }
 
-.container {
-  width: 100%;
-  max-width: 1140px;
+body {
+  font-size: 20px;
+  padding: 5rem;
+  background-color: #fffff2;
+}
+
+caption {
+  font-weight: 700;
+}
+
+th,
+td {
+  padding: 0.25rem;
+}
+
+table {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+}
+
+.month {
+  outline: 1px solid;
+  outline-offset: 1px;
+}
+
+.main-table {
+  border: 1px solid;
+}
+
+.th:first-child,
+.td:first-child {
+  background-color: #ffdc73;
 }
