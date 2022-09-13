@@ -10,15 +10,16 @@ html {
   color: #000;
 }
 
-.container {
-  width: 100%;
-  max-width: 1920px;
-}
-
 .header {
   background: #eeeff1;
-  max-height: 700px;
-  padding: 79px 0 141px 399px;
+}
+
+.container {
+  background: #eeeff1;
+  height: 700px;
+  padding-top: 79px;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .nav {
@@ -84,10 +85,30 @@ p {
   padding-bottom: 98px;
 }
 
-img {
-  width: 141px;
-  height: 50px;
-  margin-right: 45px;
+.icon-text {
+  margin-right: 40px;
+  display: inline-block;
+}
+
+.abr {
+  float: right;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.card-p {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.wite-head {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: white;
 }
 
 iframe {
@@ -95,17 +116,25 @@ iframe {
 }
 
 .footer {
+  background-color: #34547a;
+}
+
+.bottom {
   display: block;
   background-color: #34547a;
-  max-height: 151px;
+  height: 151px;
   color: white;
-  padding: 54px 0 54px 399px;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .head3 {
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;
+  margin-bottom: 10px;
 }
 
 .footer-text {
@@ -113,4 +142,5 @@ iframe {
   font-size: 13px;
   line-height: 21px;
   color: white;
+  margin-bottom: 0;
 }
