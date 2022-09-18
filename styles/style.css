@@ -1,26 +1,87 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
 }
 
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.5;
   color: #303030;
 }
 
 .container {
   width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: max-content;
+  margin: 0 auto;
+  background-color: #413f3c;
+}
+
+.menu-list > li {
+  list-style: none;
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  background: #413f3c;
+}
+
+.menu-link {
+  color: #ffe700;
+  display: inline-block;
+  padding: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.sub-menu-list {
+  position: absolute;
+  left: 0;
+  top: 64px;
+  min-width: 150px;
+  background-color: #4f5b66;
+  text-align: center;
+  display: none;
+}
+
+.sub-menu-link {
+  display: inline-block;
+  padding: 15px 15px 15px 4px;
+  color: aliceblue;
+}
+
+.menu-list > li:hover .sub-menu-list {
+  display: block;
+}
+
+.menu-list > li:hover {
+  background-color: #4f5b66;
+}
+
+.sub-sub-menu-list {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  min-width: 150px;
+  background-color: #4f5b66;
+  display: none;
+}
+
+.sub-menu-list > li:hover .sub-sub-menu-list {
+  display: block;
+}
+
+.menu-list > li > a.menu-link,
+.sub-menu-list a:hover {
+  color: #ffe700;
 }
