@@ -33,6 +33,10 @@
   align-items: center;
 }
 
+.column {
+  flex-direction: column;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -44,14 +48,14 @@ html {
 .container {
   width: 100%;
   margin: 0 auto;
-  max-width: 1350px;
+  max-width: 1600px;
   padding: 0 15px;
 }
 
 .small-container {
   width: 100%;
   margin: 0 auto;
-  max-width: 990px;
+  max-width: 1330px;
   padding: 0 15px;
 }
 
@@ -80,13 +84,37 @@ html {
 }
 
 /*---------------- HEADER---------------- */
+.grid {
+  display: grid;
+  grid-row-gap: 18px;
+  /* grid-template-columns: 1fr 0.6fr; */
+  grid-template-areas:
+    "a b"
+    "a c";
+}
+
+.header-logo {
+  grid-area: a;
+  justify-self: start;
+}
+
+.right-head-wrap {
+  align-self: baseline;
+  grid-area: b;
+  justify-self: end;
+}
+
+.basement-nav {
+  grid-area: c;
+  justify-self: end;
+}
 
 .slash {
   margin: 0 4px;
 }
 
 .team {
-  align-self: flex-start;
+  /* align-self: flex-start; */
   font-size: 36px;
   line-height: 1.23;
   letter-spacing: 3px;
@@ -123,12 +151,16 @@ input:checked + span {
   color: var(--separator-color);
 }
 
-.right-head-wrap > li {
+.right-head-wrap {
   color: var(--gray-text-color);
 }
 
 .tell {
   font-weight: 700;
+}
+
+svg.fb-icon-head {
+  margin-bottom: -5px;
 }
 
 .fb-icon-head:hover path {
@@ -137,13 +169,15 @@ input:checked + span {
 }
 
 .basement-nav > a {
-  margin-left: 15px;
   font-size: 18px;
   font-weight: 700;
   color: var(--regular-color);
   border-bottom: 2px solid transparent;
-  margin-top: 12px;
   transition: all 0.2s linear;
+}
+
+.basement-nav > a + a {
+  margin-left: 15px;
 }
 
 .basement-nav > a:hover,
@@ -171,6 +205,13 @@ a.visited {
   gap: 60px;
 }
 
+img {
+  max-height: 400px;
+  min-width: 493px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .text-area {
   margin-top: 15px;
 }
@@ -196,7 +237,7 @@ a.visited {
 
 .card img {
   border-radius: 12px;
-  height: 400px;
+  min-height: 400px;
 }
 
 .cards {
@@ -204,6 +245,28 @@ a.visited {
 }
 
 /*---------------- FOOTER---------------- */
+
+.grid-foot {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "one three"
+    "two three";
+}
+
+.left-foot {
+  grid-area: one;
+  justify-self: start;
+}
+
+.hlegal {
+  grid-area: three;
+  justify-self: end;
+}
+
+.under-lfoot {
+  grid-area: two;
+}
 
 .foot-point {
   margin: 0 10px;
