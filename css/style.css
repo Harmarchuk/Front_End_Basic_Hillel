@@ -1,6 +1,5 @@
 /* Файл обнуляющих стилей */
 @import url(../css/reset.css);
-@import url(../css/media.css);
 
 /* Переменные цвета */
 :root {
@@ -21,20 +20,12 @@
   display: flex;
 }
 
-.space-between {
-  justify-content: space-between;
-}
-
-.end {
-  justify-content: flex-end;
-}
-
 .center {
   align-items: center;
 }
 
-.column {
-  flex-direction: column;
+.space-between {
+  justify-content: space-between;
 }
 
 html {
@@ -84,10 +75,9 @@ html {
 }
 
 /*---------------- HEADER---------------- */
-.grid {
+.head-wrap {
   display: grid;
   grid-row-gap: 18px;
-  /* grid-template-columns: 1fr 0.6fr; */
   grid-template-areas:
     "a b"
     "a c";
@@ -99,7 +89,7 @@ html {
 }
 
 .right-head-wrap {
-  align-self: baseline;
+  /* align-self: baseline; */
   grid-area: b;
   justify-self: end;
 }
@@ -114,7 +104,6 @@ html {
 }
 
 .team {
-  /* align-self: flex-start; */
   font-size: 36px;
   line-height: 1.23;
   letter-spacing: 3px;
@@ -206,10 +195,11 @@ a.visited {
 }
 
 img {
-  max-height: 400px;
+  height: 400px;
   min-width: 493px;
   object-fit: cover;
   object-position: center;
+  border-radius: 12px;
 }
 
 .text-area {
@@ -235,16 +225,16 @@ img {
   transition: all 0.2s linear;
 }
 
-.card img {
-  border-radius: 12px;
-  min-height: 400px;
-}
-
 .cards {
   margin-bottom: 60px;
 }
 
 /*---------------- FOOTER---------------- */
+
+.footer {
+  background-color: var(--bg-color);
+  padding-top: 30px;
+}
 
 .grid-foot {
   display: grid;
@@ -300,7 +290,201 @@ img {
   color: var(--accent-color);
 }
 
-.footer {
-  background-color: var(--bg-color);
-  padding-top: 30px;
+/* MEDIA */
+
+/* Desktop SD */
+
+@media screen and (max-width: 1700px) {
+  .container {
+    max-width: 1350px;
+  }
+
+  .small-container {
+    max-width: 955px;
+  }
+
+  img {
+    min-width: 400px;
+  }
+}
+
+/* Tablet HD */
+
+@media screen and (max-width: 1350px) {
+  .container {
+    max-width: 934px;
+  }
+
+  .small-container {
+    max-width: 585px;
+  }
+
+  img {
+    min-width: 261px;
+  }
+}
+
+/* Tablet SD */
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 678px;
+    padding: 0 30px;
+  }
+
+  .small-container {
+    max-width: 678px;
+  }
+
+  img {
+    min-width: 294px;
+  }
+
+  .head-wrap {
+    grid-template-areas:
+      "b"
+      "a"
+      "c";
+  }
+
+  .header-logo {
+    grid-area: a;
+    justify-self: start;
+  }
+
+  .right-head-wrap {
+    grid-area: b;
+    justify-self: start;
+  }
+
+  .basement-nav {
+    grid-area: c;
+    justify-self: start;
+  }
+
+  .cards {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
+  .grid-foot {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
+
+  .left-foot {
+    grid-area: one;
+    justify-self: center;
+  }
+
+  .hlegal {
+    grid-area: three;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+
+  .under-lfoot {
+    grid-area: two;
+    justify-self: center;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 575px) {
+  .header {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    position: relative;
+    background-color: var(--bg-color);
+  }
+
+  .container {
+    max-width: 362px;
+  }
+
+  .small-container {
+    max-width: 320px;
+  }
+
+  a.mech,
+  span.point,
+  svg.fb-icon-head,
+  .basement-nav {
+    display: none;
+  }
+
+  img {
+    max-height: 300px;
+    min-width: 315px;
+  }
+
+  .head-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .header-logo {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+  }
+
+  .right-head-wrap {
+    display: grid;
+    grid-template-columns: 99px 97px;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 70px;
+    height: 32px;
+  }
+
+  .slash {
+    width: 12px;
+    height: 26px;
+  }
+
+  .team {
+    font-size: 20px;
+  }
+
+  .main-title {
+    font-size: 30px;
+    margin-top: 70px;
+  }
+
+  .cards {
+    grid-template: 1fr /1fr;
+    gap: 30px;
+  }
+
+  .left-foot,
+  .hlegal,
+  .under-lfoot {
+    display: grid;
+    justify-items: center;
+  }
+
+  .under-lfoot svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .foot-point {
+    display: none;
+  }
+
+  a.tell {
+    margin-bottom: 10px;
+  }
+
+  .hlegal {
+    margin-bottom: 30px;
+  }
 }
