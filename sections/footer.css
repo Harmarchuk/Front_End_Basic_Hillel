@@ -1,0 +1,59 @@
+.footer {
+  background-color: var(--bg-color);
+  padding-top: 30px;
+}
+
+.grid-foot {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "one three"
+    "two three";
+}
+
+.left-foot {
+  grid-area: one;
+  justify-self: start;
+}
+
+.hlegal {
+  grid-area: three;
+  justify-self: end;
+}
+
+.under-lfoot {
+  grid-area: two;
+}
+
+.foot-point {
+  margin: 0 10px;
+  color: var(--gray-text-color);
+}
+
+.left-foot a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  color: var(--regular-color);
+}
+
+.foot-mail {
+  color: var(--regular-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+.hlegal {
+  color: var(--gray-text-color);
+}
+
+.under-lfoot a:hover path {
+  fill: var(--accent-color);
+}
+
+.foot-mail:hover {
+  color: var(--accent-color);
+}

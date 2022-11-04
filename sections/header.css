@@ -1,0 +1,132 @@
+.section-header {
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  min-height: 100vh;
+}
+
+.head-wrap {
+  display: grid;
+  grid-row-gap: 18px;
+  grid-template-areas:
+    "a b"
+    "a c";
+}
+
+.header-logo {
+  grid-area: a;
+  justify-self: start;
+}
+
+.right-head-wrap {
+  grid-area: b;
+  justify-self: end;
+}
+
+.lang-btn span,
+a.mech,
+a.tell {
+  color: #fff;
+}
+
+.basement-nav {
+  grid-area: c;
+  justify-self: end;
+}
+
+input[type="radio"] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+input + span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px 7px;
+  transition: all 0.2s linear;
+}
+
+input:hover + span {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+input:checked + span {
+  background-color: var(--accent-color);
+  color: aliceblue;
+}
+
+.point {
+  margin: 0 6px;
+  color: var(--separator-color);
+}
+
+.right-head-wrap {
+  color: var(--gray-text-color);
+}
+
+.tell {
+  font-weight: 700;
+}
+
+/* svg.fb-icon-head {
+  margin-bottom: -5px;
+} */
+
+.fb-icon-head path {
+  fill: #fff;
+}
+
+.fb-icon-head:hover path {
+  fill: var(--accent-color);
+  transition: all 0.2s linear;
+}
+
+.basement-nav > a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s linear;
+}
+
+.basement-nav > a + a {
+  margin-left: 15px;
+}
+
+.basement-nav > a:hover,
+a.visited {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+.navbar {
+  display: none;
+}
+
+.section-banner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 872.34px;
+  height: 1000px;
+}
+
+.banner-symbol {
+  position: absolute;
+  background-image: url(../images/icons/big-h.svg);
+  top: 31%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 872.34px;
+  height: 1000px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
