@@ -1,11 +1,21 @@
 .section-header {
-  background: linear-gradient(
-    228.57deg,
-    #323264 11.93%,
-    #323264 57.17%,
-    #643e72 87.46%
-  );
-  min-height: 100vh;
+  background: url("../images/icons/Symbol.png") no-repeat top left 50% / contain,
+    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  min-height: 1000px;
+}
+
+.section-header::before {
+  content: "you legal solutions provider";
+  position: absolute;
+  width: 800px;
+  height: 46px;
+  left: calc(50% - 800px / 2);
+  top: calc(42% - 46px / 2);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .head-wrap {
@@ -109,24 +119,4 @@ a.visited {
 
 .navbar {
   display: none;
-}
-
-.section-banner {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 872.34px;
-  height: 1000px;
-}
-
-.banner-symbol {
-  position: absolute;
-  background-image: url(../images/icons/big-h.svg);
-  top: 31%;
-  left: 85%;
-  transform: translate(-50%, -50%);
-  width: 872.34px;
-  height: 1000px;
-  background-repeat: no-repeat;
-  overflow: hidden;
 }
