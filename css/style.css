@@ -5,3 +5,124 @@
 
 /*---------------- MAIN---------------- */
 
+.section-banner {
+  min-height: 100vh;
+  text-align: center;
+  justify-content: center;
+  background: url(../images/img/Symbol.png) no-repeat center/contain;
+}
+
+.section-banner h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.22;
+}
+
+.section-banner .header-btn-arrow {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-btn-arrow:hover svg path,
+.header-btn-arrow:hover svg circle {
+  stroke: var(--accent-color);
+}
+
+.d-flex {
+  margin: 75px 0;
+}
+
+.tab-content {
+  padding-left: 50px;
+}
+
+.tab-pane h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.24;
+  margin-bottom: 30px;
+}
+
+.tab-pane p {
+  font-size: 19px;
+  line-height: 1.58;
+}
+
+.serveces-skill h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.22;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 10px;
+}
+
+a.serveces-arrow {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--regular-color);
+}
+
+.serveces-arrow::after {
+  content: url(../images/icons/service_arrow.svg);
+  width: 4.5px;
+  height: 9px;
+  margin-left: 5px;
+}
+
+.serveces-arrow:hover {
+  color: var(--accent-color);
+}
+
+.serveces-arrow:hover::after {
+  content: url(../images/icons/red-service-arrow.svg);
+}
+
+.tickets {
+  display: grid;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 60px;
+  margin: 60px 0 60px 0;
+}
+
+.tickets span {
+  display: block;
+  background-color: #fff;
+  width: 92px;
+  height: 92px;
+  border-radius: 24px;
+}
+
+.tickets span img {
+  margin: 14px;
+}
+
+.ticket a {
+  display: block;
+}
+
+.ticket img {
+  width: 64px;
+  height: 64px;
+}
+
+.ticket h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.23;
+  color: var(--regular-color);
+  margin: 30px 0 15px 0;
+}
+
+.ticket p {
+  line-height: 1.7;
+  max-width: 440px;
+}

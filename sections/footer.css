@@ -50,6 +50,10 @@
   color: var(--gray-text-color);
 }
 
+.under-lfoot .tell {
+  color: var(--alt-color);
+}
+
 .under-lfoot a:hover path {
   fill: var(--accent-color);
 }

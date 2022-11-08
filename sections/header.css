@@ -1,21 +1,19 @@
-.section-header {
-  background: url("../images/icons/Symbol.png") no-repeat top left 50% / contain,
-    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
-  min-height: 1000px;
+.gradient {
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  color: #fff;
 }
 
-.section-header::before {
-  content: "you legal solutions provider";
+.header {
   position: absolute;
-  width: 800px;
-  height: 46px;
-  left: calc(50% - 800px / 2);
-  top: calc(42% - 46px / 2);
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
+  left: 0;
+  top: 0;
+  right: 0;
   text-align: center;
-  color: #ffffff;
 }
 
 .head-wrap {
@@ -38,7 +36,7 @@
 
 .lang-btn span,
 a.mech,
-a.tell {
+a.tel {
   color: #fff;
 }
 
@@ -86,9 +84,9 @@ input:checked + span {
   font-weight: 700;
 }
 
-/* svg.fb-icon-head {
+svg.fb-icon-head {
   margin-bottom: -5px;
-} */
+}
 
 .fb-icon-head path {
   fill: #fff;
@@ -102,7 +100,7 @@ input:checked + span {
 .basement-nav > a {
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  /* color: #fff; */
   border-bottom: 2px solid transparent;
   transition: all 0.2s linear;
 }
