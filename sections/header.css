@@ -6,6 +6,7 @@
     #643e72 87.46%
   );
   color: #fff;
+  border-radius: 0 0 12px 12px;
 }
 
 .header {
@@ -84,9 +85,9 @@ input:checked + span {
   font-weight: 700;
 }
 
-svg.fb-icon-head {
+/* svg.fb-icon-head {
   margin-bottom: -5px;
-}
+} */
 
 .fb-icon-head path {
   fill: #fff;
@@ -100,7 +101,6 @@ svg.fb-icon-head {
 .basement-nav > a {
   font-size: 18px;
   font-weight: 700;
-  /* color: #fff; */
   border-bottom: 2px solid transparent;
   transition: all 0.2s linear;
 }

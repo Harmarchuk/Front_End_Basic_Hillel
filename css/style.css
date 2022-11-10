@@ -31,7 +31,7 @@
 }
 
 .d-flex {
-  margin: 75px 0;
+  padding: 75px 0;
 }
 
 .tab-content {
@@ -125,4 +125,34 @@ a.serveces-arrow {
 .ticket p {
   line-height: 1.7;
   max-width: 440px;
+}
+
+.tickets {
+  position: relative;
+}
+
+.tickets::before,
+.tickets::after {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  width: 96vw;
+  height: 10px;
+  transform: translateX(-50%);
+  background-color: #cacadb;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.tickets::after {
+  bottom: -79px;
+  left: 50%;
+  width: 92vw;
+  background-color: #e7e7f2;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  gap: 30px;
 }

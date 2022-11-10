@@ -73,3 +73,11 @@ html {
 .footer {
   grid-area: footer;
 }
+
+.mt60 {
+  margin-top: 80px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
