@@ -50,6 +50,13 @@ html {
   padding: 0 15px;
 }
 
+.container-sld {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1750px;
+  padding: 0 15px;
+}
+
 .wrapper {
   min-height: 100vh;
   display: grid;
@@ -80,4 +87,22 @@ html {
 
 .mb60 {
   margin-bottom: 60px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.gradient-h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.22;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
