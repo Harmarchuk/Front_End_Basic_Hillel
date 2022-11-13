@@ -53,7 +53,7 @@
   margin-top: 10px;
 }
 
-a.serveces-arrow {
+/* a.serveces-arrow {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.22;
@@ -76,7 +76,7 @@ a.serveces-arrow {
 
 .serveces-arrow:hover::after {
   content: url(../images/icons/red-service-arrow.svg);
-}
+} */
 
 .tickets {
   display: grid;
@@ -162,9 +162,9 @@ a.serveces-arrow {
   border-radius: 12px 0 0 12px;
 }
 
-.item-p {
+/* .item-p {
   margin: 30px 0 5px 0;
-}
+} */
 
 .item-h2 {
   max-width: 1049px;

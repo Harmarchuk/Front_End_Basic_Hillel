@@ -106,3 +106,32 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.item-p {
+  margin: 30px 0 5px 0;
+}
+
+a.serveces-arrow {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--regular-color);
+}
+
+.serveces-arrow::after,
+.item-p::after {
+  content: url(../images/icons/service_arrow.svg);
+  width: 4.5px;
+  height: 9px;
+  margin-left: 5px;
+}
+
+.serveces-arrow:hover {
+  color: var(--accent-color);
+}
+
+.serveces-arrow:hover::after {
+  content: url(../images/icons/red-service-arrow.svg);
+}
