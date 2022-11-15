@@ -8,6 +8,29 @@
   .small-container {
     max-width: 1110px;
   }
+
+  .container-sld {
+    margin: 0 auto;
+    max-width: none;
+    padding: 0;
+  }
+
+  div.partners-grid {
+    border-radius: 0;
+  }
+
+  img.bottom-img {
+    max-width: 420px;
+  }
+
+  div.photo-sld img {
+    height: 344px;
+    /* border-radius: 0; */
+  }
+
+  div.partners-grid {
+    margin-bottom: 0;
+  }
 }
 
 /* Tablet HD */
@@ -17,6 +40,19 @@
   .small-container {
     max-width: 934px;
   }
+
+  img.bottom-img {
+    max-width: 281px;
+  }
+
+  div.photo-sld img {
+    height: 528px;
+    /* border-radius: 0; */
+  }
+
+  section.section-banner {
+    background: url(../images/img/Symbol.png) no-repeat center/cover;
+  }
 }
 
 /* Tablet SD */
@@ -25,7 +61,7 @@
   .container,
   .small-container {
     max-width: 678px;
-    padding: 0 60px;
+    padding: 0;
   }
 
   .head-wrap {
@@ -57,6 +93,75 @@
   .left-contact-column,
   .right-contact-column {
     width: 100%;
+  }
+
+  #bs-parent {
+    flex-direction: column;
+  }
+
+  .nav {
+    padding: 60px 0;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    border-right: none;
+  }
+
+  .tab-pane h3 {
+    margin-top: 60px;
+  }
+
+  #bs-child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    overflow-y: scroll;
+  }
+
+  div.tickets {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+
+  .sld-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #mySlide {
+    border-radius: 12px;
+  }
+
+  div.photo-sld img {
+    width: 648px;
+    height: 500px;
+    /* border-radius: 0; */
+  }
+
+  .item-content {
+    margin-bottom: 30px;
+    padding: 0 30px;
+  }
+
+  h2.item-h2 {
+    max-width: 515px;
+  }
+
+  div.partners-grid {
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  }
+
+  div.bottom-block {
+    grid-template-areas:
+      "one two"
+      "three three";
+    gap: 30px;
+  }
+
+  img.three-bot.bottom-img {
+    min-width: 648px;
+  }
+
+  img.bottom-img {
+    max-width: 309px;
   }
 
   .grid-foot {
