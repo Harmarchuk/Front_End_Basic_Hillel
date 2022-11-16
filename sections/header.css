@@ -85,10 +85,6 @@ input:checked + span {
   font-weight: 700;
 }
 
-/* svg.fb-icon-head {
-  margin-bottom: -5px;
-} */
-
 .fb-icon-head path {
   fill: #fff;
 }
@@ -115,6 +111,7 @@ a.visited {
   border-bottom-color: var(--accent-color);
 }
 
-.navbar {
+.navbar,
+.burger-men {
   display: none;
 }

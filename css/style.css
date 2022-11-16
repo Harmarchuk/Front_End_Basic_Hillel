@@ -53,31 +53,6 @@
   margin-top: 10px;
 }
 
-/* a.serveces-arrow {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.22;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--regular-color);
-}
-
-.serveces-arrow::after,
-.item-p::after {
-  content: url(../images/icons/service_arrow.svg);
-  width: 4.5px;
-  height: 9px;
-  margin-left: 5px;
-}
-
-.serveces-arrow:hover {
-  color: var(--accent-color);
-}
-
-.serveces-arrow:hover::after {
-  content: url(../images/icons/red-service-arrow.svg);
-} */
-
 .tickets {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -161,10 +136,6 @@
   object-position: center;
   border-radius: 12px 0 0 12px;
 }
-
-/* .item-p {
-  margin: 30px 0 5px 0;
-} */
 
 .item-h2 {
   max-width: 1049px;
@@ -284,20 +255,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-template-areas: "one two three";
+  grid-template-areas: "a b c";
   grid-column-gap: 30px;
 }
 
 .first-block-item {
-  grid-area: one;
+  grid-area: a;
 }
 
 .second-block-item {
-  grid-area: two;
+  grid-area: b;
 }
 
 .third-block-item {
-  grid-area: three;
+  grid-area: c;
 }
 
 .bottom-img {
